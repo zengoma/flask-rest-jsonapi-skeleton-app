@@ -1,0 +1,4 @@
+venv
+.idea
+dev.db
+__pycache__/*
