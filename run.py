@@ -10,7 +10,7 @@ def create_app():
     _app = Flask(__name__)
     _app.config.from_object('config')
     db.init_app(_app)
-    api.init_app(_app, Blueprint('api', __name__, url_prefix='/api'))  # @todo: Fix api blueprint errors
+    api.init_app(_app, Blueprint('api', __name__, url_prefix='/api'))
     api.permission_manager(permission_manager)
     return _app
 
